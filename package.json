@@ -1,0 +1,34 @@
+{
+  "name": "dotenv-validator",
+  "version": "1.0.0",
+  "description": "Validate .env files against .env.example. Find missing, extra, empty, and invalid environment variables. Zero dependencies.",
+  "type": "module",
+  "bin": {
+    "dotenv-validator": "./index.js",
+    "denv": "./index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "developer-tools",
+    "cli",
+    "nodejs",
+    "zero-dependencies",
+    "dotenv",
+    "env",
+    "validation",
+    "configuration",
+    "devops"
+  ],
+  "license": "MIT",
+  "author": "NickCirv",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickCirv/dotenv-validator.git"
+  },
+  "homepage": "https://github.com/NickCirv/dotenv-validator#readme",
+  "bugs": {
+    "url": "https://github.com/NickCirv/dotenv-validator/issues"
+  }
+}
