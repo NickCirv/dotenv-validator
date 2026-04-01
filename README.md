@@ -1,3 +1,5 @@
+![Banner](banner.svg)
+
 # dotenv-validator
 
 Validate `.env` files against `.env.example`. Find missing, extra, empty, and invalid environment variables.
