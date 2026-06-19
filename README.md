@@ -4,9 +4,9 @@
 
 **Catch missing, extra, empty, and type-invalid env vars before they break production.**
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue?labelColor=0B0A09)](LICENSE)
-[![Zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen?labelColor=0B0A09)](package.json)
-[![Node >=18](https://img.shields.io/badge/node-%3E%3D18-blue?labelColor=0B0A09)](package.json)
+[![License: MIT](https://img.shields.io/badge/license-MIT-0B0A09?style=flat-square)](LICENSE)
+![Zero dependencies](https://img.shields.io/badge/dependencies-0-0B0A09?style=flat-square)
+![Node >=18](https://img.shields.io/badge/node-%3E%3D18-0B0A09?style=flat-square&logo=node.js&logoColor=white)
 
 </div>
 
@@ -24,6 +24,12 @@ npx github:NickCirv/dotenv-validator
 
 # Strict mode — extra keys become errors; CI-friendly exit code
 npx github:NickCirv/dotenv-validator --strict --ci
+
+# Custom file paths
+npx github:NickCirv/dotenv-validator --env .env.local --example .env.example
+
+# Validate all .env* files in a directory
+npx github:NickCirv/dotenv-validator --dir ./apps
 
 # Generate a .env scaffold from your .env.example
 npx github:NickCirv/dotenv-validator --fix
@@ -55,5 +61,13 @@ Validating: /your/project/.env
 Summary: 1 error, 2 warnings, 1 ok
 ```
 
+### GitHub Actions
+
+```yaml
+- name: Validate .env
+  run: npx github:NickCirv/dotenv-validator --ci --strict
+```
+
 ---
+
 <sub>Zero dependencies · Node >=18 · MIT · by <a href="https://github.com/NickCirv">NickCirv</a></sub>
